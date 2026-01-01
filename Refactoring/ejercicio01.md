@@ -7,21 +7,21 @@ La falta de claridad en los nombres de métodos lleva a confusiones e incluso im
 ### Refactoring a aplicar: Rename Method.
 1. 
     ```java
-    public double getLimiteCredito() {...}
+    public double getLimiteCredito() {}
     ```
 2. ```java
-    protected double getFacturacionEntreFechas(LocalDate f1, LocalDate f2) {...}
+    protected double getFacturacionEntreFechas(LocalDate f1, LocalDate f2) {}
     ```
 3. ```java
-   private double getCobradoEntreFechas(LocalDate f1, LocalDate f2) {...}
+   private double getCobradoEntreFechas(LocalDate f1, LocalDate f2) {}
     ```
 La falta de claridad en los nombres de parámetros causa que el cuerpo del método sea más difícil de interpretar.
 ### Refactoring a aplicar: Rename Params.
 2. ```java
-   protected double getFacturacionEntreFechas(LocalDate fechaInicio, LocalDate fechaFinal) {...}
+   protected double getFacturacionEntreFechas(LocalDate fechaInicio, LocalDate fechaFinal) {}
    ```
 3. ```java
-   private double getCobradoEntreFechas(LocalDate fechaInicio, LocalDate fechaFinal) {...}
+   private double getCobradoEntreFechas(LocalDate fechaInicio, LocalDate fechaFinal) {}
    ```
 ___
 ## 1.2 Participación en proyectos.
