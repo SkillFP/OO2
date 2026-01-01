@@ -50,7 +50,7 @@ private double calcularTotalSalarios(){
             .sum();
 }
 
-private double calcularPromedioEdad(){
+private double calcularPromedioEdades(){
     return personal.stream()
             .mapToInt(empleado -> empleado.getEdad())
             .average()
@@ -59,7 +59,7 @@ private double calcularPromedioEdad(){
 
 public void imprimirValores(){
     String message = String.format("El promedio de las edades es %s y el " +
-            "total de salarios es %s", promedioEdades, totalSalarios);
+            "total de salarios es %s", calcularPromedioEdades(), calcularTotalSalarios());
     System.out.println(message);
 }
 ```
