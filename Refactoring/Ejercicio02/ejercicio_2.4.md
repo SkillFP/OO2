@@ -92,7 +92,7 @@ public class Carrito {
 ```
 ### Bad Smell: nombres poco descriptivos?
 La cátedra lo reclamaría para `total()`, pero no estoy de acuerdo.
-### Refactor a aplicar: *Rename Method¨*.
+### Refactor a aplicar: *Rename Method*.
 ```java
 public class Producto {
     private String nombre;
@@ -114,3 +114,4 @@ public class Carrito {
     }
 }
 ```
+___
