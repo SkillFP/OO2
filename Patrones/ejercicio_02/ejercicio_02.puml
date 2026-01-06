@@ -1,0 +1,33 @@
+@startuml
+abstract class Empleado{
++sueldo():Real
++{abstract} calcularSueldoBasico():Real
++{abstract} calcularAdicional():Real
++calcularDescuento():Real
+}
+
+class EmpleadoPasante extends Empleado{
+- examenesRendidos:Integer
+--
++calcularSueldoBasico():Real
++calcularAdicional():Real
+}
+
+class EmpleadoPlanta extends Empleado{
+-casado:Boolean
+-aniosAntiguedad:Integer
+-cantidadHijos:Integer
+--
++calcularSueldoBasico():Real
++calcularAdicional():Real
+}
+
+class EmpleadoTemporario extends Empleado{
+-casado:Boolean
+-cantidadHijos:Integer
+-horasTrabajadas:Integer
+--
++calcularSueldoBasico():Real
++calcularAdicional():Real
+}
+@enduml
