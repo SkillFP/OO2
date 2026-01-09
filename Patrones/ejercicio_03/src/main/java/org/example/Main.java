@@ -1,16 +1,13 @@
 package org.example;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
     public static void main(String[] args) {
-        List<Media> mediaList = new ArrayList<>();
+        MediaPlayer mediaPlayer = new MediaPlayer();
 
-        mediaList.add(new Audio());
-        mediaList.add(new VideoFile());
-        mediaList.add(new VideoStreamAdapter(new VideoStream()));
+        mediaPlayer.addMedia(new Audio());
+        mediaPlayer.addMedia(new VideoFile());
+        mediaPlayer.addMedia(new VideoStreamAdapter(new VideoStream()));
 
-        mediaList.forEach(Media::play);
+        mediaPlayer.play();
     }
 }

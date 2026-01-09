@@ -1,0 +1,33 @@
+@startuml
+class MediaPlayer <<Client>>{
++void play()
++void addMedia(Media:media)
+}
+
+interface Media <<Target>>{
++{abstract}void play()
+}
+
+class Audio implements Media{
++<<create>> Audio():Audio
++void play()
+}
+
+class VideoFile implements Media{
++<<create>> VideoFile():VideoFile
++void play()
+}
+
+class VideoStream <<Adaptee>>{
++<<create>> VideoStream():VideoStream
++void reproduce()
+}
+
+class VideoStreamAdapter <<Adapter>> implements Media{
++<<create>> VideoStreamAdapter(videoStream:VideoStream):VideoStreamAdapter
++void play()
+}
+
+MediaPlayer --> "0..* media" Media
+VideoStreamAdapter --> "exporter" VideoStream:<<depends>>
+@enduml
