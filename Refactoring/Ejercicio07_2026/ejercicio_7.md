@@ -53,7 +53,6 @@ class EtiquetaDetalle extends Etiqueta {
 
 //==========================================================================
 ```
-Además del código repetido no puedo evitar que me llame la atención que no se use `toString()`. Su uso conlleva ventajas implementadas en el lenguaje y es más fácil de leer, ya que uno espera que el output de todos los datos formateados de un objeto esté en el susodicho.
 
 No indico las líneas porque dale... Pero háganlo en el parcial.
 
