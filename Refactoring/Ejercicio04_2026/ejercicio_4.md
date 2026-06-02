@@ -1,9 +1,11 @@
 ## Ejercicio 4: Alcance en Redes Sociales
+
+---
 Una nueva red social está desarrollando un sistema para modelar perfiles y publicaciones, y
 medir su alcance como parte del algoritmo de relevancia. Cada publicación acumula
 reacciones de los usuarios, y cada perfil consolida el alcance de sus publicaciones
 amplificándolo según si está verificado o no. El código es el siguiente:
----
+
 ![img.png](img.png)
 
 Liste cada uno de los cambios necesarios, indicando archivo y línea afectados, para cada

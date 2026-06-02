@@ -1,4 +1,7 @@
-## 3 Iteradores circulares bis
+## Ejercicio 3: Iteradores circulares bis
+
+### Nota: este ejercicio se podía resolver usando Collections como ArrayList<>, pero decidí intentar lograr una solución manteniendo el uso de primitivos ya que de otra forma la solución sería muy obvia.
+
 ---
 ![img.png](img.png)
 ![img_1.png](img_1.png)
